@@ -10,8 +10,8 @@ namespace Lab10
     {
         static void Main(string[] args)
         {
-            #region new objects
-
+            #region new objects 
+            //creating new objects
             Movie Animated1 = new Movie();
             Movie Animated2 = new Movie();
             Movie Animated3 = new Movie();
@@ -31,7 +31,7 @@ namespace Lab10
 
 
             #region List of Movies
-
+            //populating elements of array list
             Animated1.SetMovieCategory("animated");
             Animated1.SetTitle("The Lion King");
 
@@ -66,7 +66,6 @@ namespace Lab10
             SciFi2.SetTitle("Interstellar");
 
 
-
             Movie[] ListOfMovies = new Movie[11];
 
             ListOfMovies[0] = Animated1;
@@ -81,15 +80,22 @@ namespace Lab10
             ListOfMovies[9] = SciFi1;
             ListOfMovies[10] = SciFi2;
 
-
-
-
-
             #endregion
 
             Console.WriteLine("Welcome to the Movie List Application!");
             Console.WriteLine("What category are you interested in?: ");
             string choice = Console.ReadLine();
+
+
+            foreach (Movie temp in ListOfMovies)
+            {
+                if
+
+            } //foreach Movie temp in Movie List, if input == catogory, print title)
+            {
+
+            }
+
 
              
 
