@@ -65,7 +65,34 @@ namespace Lab10
             SciFi2.SetMovieCategory("scifi");
             SciFi2.SetTitle("Interstellar");
 
+
+
+            Movie[] ListOfMovies = new Movie[11];
+
+            ListOfMovies[0] = Animated1;
+            ListOfMovies[1] = Animated2;
+            ListOfMovies[2] = Animated3;
+            ListOfMovies[3] = Drama1;
+            ListOfMovies[4] = Drama2;
+            ListOfMovies[5] = Drama3;
+            ListOfMovies[6] = Horror1;
+            ListOfMovies[7] = Horror2;
+            ListOfMovies[8] = Horror3;
+            ListOfMovies[9] = SciFi1;
+            ListOfMovies[10] = SciFi2;
+
+
+
+
+
             #endregion
+
+            Console.WriteLine("Welcome to the Movie List Application!");
+            Console.WriteLine("What category are you interested in?: ");
+            string choice = Console.ReadLine();
+
+             
+
 
 
 
