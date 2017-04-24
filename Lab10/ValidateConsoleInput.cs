@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Lab10
 {
     class ValidateConsoleInput
-    {
+    { //method to validate user to continue
         public static bool Continue()
         {
             Console.WriteLine("Continue? (y/n)");
@@ -35,7 +35,7 @@ namespace Lab10
         // Method to Get Valid String
         public static string GetValidString()
         {
-            string[] validCategories = { "scifi", "drama", "horror", "animated" };
+            string[] validCategories = { "scifi", "drama", "horror", "animated" }; //input should contain one of these entries
             string Input = Console.ReadLine().ToLower();
 
             // Validate Input

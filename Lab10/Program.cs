@@ -85,10 +85,10 @@ namespace Lab10
             do
             {
 
-                Console.WriteLine("Welcome to the Movie List Application!\n");
+                Console.WriteLine("Welcome to the very limited Movie List Application!\n");
                 Console.WriteLine("What genre are you interested in?");
                 Console.WriteLine("Please make a choice from the following");
-                Console.WriteLine("animated / drama / horror / scifi: ");
+                Console.WriteLine("Animated / Drama / Horror / Scifi: ");
 
                 string choice = ValidateConsoleInput.GetValidString();
 
