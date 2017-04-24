@@ -48,5 +48,28 @@ namespace Lab10
             Title = Titleinput;
         }
 
+        public static bool Continue()
+        {
+            Console.WriteLine("Continue? (y/n)");
+
+            string input = Console.ReadLine();
+
+            if (input.ToLower() == "n")
+            {
+                return false;
+            }
+            else if (input.ToLower() == "y")
+            {
+                Console.Clear();
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+                Continue();
+                return true;
+            }
+
+        }
     }
 }

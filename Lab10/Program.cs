@@ -82,26 +82,27 @@ namespace Lab10
 
             #endregion
 
-            Console.WriteLine("Welcome to the Movie List Application!");
-            Console.WriteLine("What category are you interested in?: ");
-            string choice = Console.ReadLine();
-
-
-            foreach (Movie temp in ListOfMovies)
-            {
-                if (choice == temp.MovieCategory)
-                    Console.WriteLine(temp.MovieTitle);
-
-            } //foreach Movie temp in Movie List, if input == catogory, print title)
+            do
             {
 
-            }
+                Console.WriteLine("Welcome to the Movie List Application!\n");
+                Console.WriteLine("What genre are you interested in?");
+                Console.WriteLine("Please make a choice from the following");
+                Console.WriteLine("animated / drama / horror / scifi: ");
+
+                string choice = Console.ReadLine();
 
 
-             
+                foreach (Movie temp in ListOfMovies)
+                {
+                    if (choice == temp.MovieCategory)
+                        Console.WriteLine(temp.MovieTitle);
+
+                }
 
 
-
+            } while (Movie.Continue());
+            Console.WriteLine("Fine! Read a book! Goodbye");
 
 
         }
