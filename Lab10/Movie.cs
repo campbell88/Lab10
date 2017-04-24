@@ -20,7 +20,7 @@ namespace Lab10
             }
             get
             {
-                return Title;
+                return Category;
 
             }
 

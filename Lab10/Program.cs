@@ -89,7 +89,8 @@ namespace Lab10
 
             foreach (Movie temp in ListOfMovies)
             {
-                if
+                if (choice == temp.MovieCategory)
+                    Console.WriteLine(temp.MovieTitle);
 
             } //foreach Movie temp in Movie List, if input == catogory, print title)
             {
