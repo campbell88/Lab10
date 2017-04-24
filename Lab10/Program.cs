@@ -90,7 +90,7 @@ namespace Lab10
                 Console.WriteLine("Please make a choice from the following");
                 Console.WriteLine("animated / drama / horror / scifi: ");
 
-                string choice = Console.ReadLine();
+                string choice = ValidateConsoleInput.GetValidString();
 
 
                 foreach (Movie temp in ListOfMovies)
@@ -101,7 +101,7 @@ namespace Lab10
                 }
 
 
-            } while (Movie.Continue());
+            } while (ValidateConsoleInput.Continue());
             Console.WriteLine("Fine! Read a book! Goodbye");
 
 
