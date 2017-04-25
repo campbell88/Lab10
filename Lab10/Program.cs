@@ -31,7 +31,7 @@ namespace Lab10
 
 
             #region List of Movies
-            //populating elements of array list
+            //populating elements of array
             Animated1.SetMovieCategory("animated");
             Animated1.SetTitle("The Lion King");
 

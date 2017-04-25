@@ -39,7 +39,7 @@ namespace Lab10
             string Input = Console.ReadLine().ToLower();
 
             // Validate Input
-            while ((string.IsNullOrEmpty(Input)) || (string.IsNullOrWhiteSpace(Input) || (Input.Length == 0)) || !(validCategories.Contains(Input)))
+            while ((string.IsNullOrEmpty(Input)) || (string.IsNullOrWhiteSpace(Input) || !(validCategories.Contains(Input))))
             {
                 Console.Write("Error: Please enter only the following: animated / drama / horror / scifi: ");
                 Input = Console.ReadLine().ToLower();
